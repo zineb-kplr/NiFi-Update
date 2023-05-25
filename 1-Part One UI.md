@@ -106,6 +106,11 @@
    
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/05d1e9d8-fa88-4909-9396-fd493a0d115a)
   
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
+
 - Aller sur UpdateAttribute > Properties > +
    
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/1f8c3249-69b8-4bb4-a45a-1a3aa6719b80)
@@ -137,6 +142,10 @@
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/b1232506-ccb1-48f7-a4e5-a20b95b698ec)
 
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
 - Aller sur Properties > Directory et ajouter ```data/input``` :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/bb3c7728-7411-437d-896f-a7de4827be8c)
@@ -163,6 +172,11 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/a0224c78-7d33-494f-95bb-f74f76601f07)
 
 - Double cliquer sur le process LogMessage :
+
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
 
 - Aller sur Relationships , et cocher terminate :
 
