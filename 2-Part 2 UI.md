@@ -166,6 +166,41 @@ Ajoutez schema text :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/3978934d-9608-4735-a6e7-109552205646)
 
+- Avant d'éxecuter ce Workflow il faut lancer Kafka et Zookeeper dans docker :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/322de52f-17ac-47e2-9372-309a79e4f2f2)
+
+- Dans le terminal de Gitpod ; exécuter ces commandes :
+
+ - Accéder au container de Kafka depuis Docker :
+
+ ```
+ docker exec -it empty-template-kafka-1 bin/bash
+ ```
+ ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/989c39d2-7f7a-42ef-9c14-d225b7125bf8)
+
+ - ouvrir le repertoire kafka_2.13-2.8.1
+
+ ```
+ cd opt/kafka_2.13-2.8.1
+ ```
+ ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/921424a0-5411-4df5-8f8c-61f7e9ac5198)
+
+- lancer kafka
+
+```
+./bin/kafka-server-start.sh config/server.properties >ks.log&
+```
+
+- lancer zookeeper 
+
+```
+./bin/zookeeper-server-start.sh config/zookeeper.properties > zk.log &
+```
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/309b2933-2c7c-4881-9036-4407f80db5e9)
+
+
+
 - Executer ensuite les 3 process :
 
 
