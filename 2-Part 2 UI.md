@@ -18,7 +18,11 @@
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/a134e24e-c4ff-436e-aab4-45b7a7a4e83a)
 
-- Ajoutez data/input en InputDirectory :
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
+- Aller sur Properties / Ajoutez data/input en InputDirectory :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/9f87228b-9b7a-42c5-b19a-d50e5ae3edbd)
 
@@ -40,7 +44,11 @@
 
 - Double cliquez sur UpdateAttribute
 
-- Ajouter une nouvelle property topic > OK:
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
+- Aller sur Properties / Ajouter une nouvelle property topic > OK:
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/cbee1c6d-93a9-49c1-8601-f5522e19efc7)
 
@@ -76,8 +84,12 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/2069b47a-4ed6-45a7-baa0-f08b8987676e)
 
 - Double cliquez sur PublishKafkaRecord
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
 
-- Ajouter ```kafka:9092``` à kafka Brokers :
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/adb562e3-c7e6-43ba-9203-04acd528caa1)
+
+
+- Aller sur Properties / Ajouter ```kafka:9092``` à kafka Brokers :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/7e678a28-4007-4768-a79f-6e5d790b52c1)
 
