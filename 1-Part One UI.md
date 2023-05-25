@@ -176,6 +176,16 @@
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/123695e8-60a6-4591-820c-6d70e75fac12)
 
+- Maintenant ; on va éxecuter notre premier Workflow en cliquant sur l'icon d'éxecution :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/273d1694-3f14-4d09-a37f-0052c595b8f6)
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/89aec973-65f5-4214-8818-c74e3e322d28)
+
+- 📢📢📢📢 Attentionn !!!! Après 10 ou 20 secondes vous devez arreter les deux process GetHTTP : Apple Stock et GetHTTP : IBM Stock pour ne pas épuiser votre API :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/77e9e7f0-dfc5-47c6-87a8-67a2405bcf18)
+
 
 
 
