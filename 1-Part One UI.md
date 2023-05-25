@@ -126,6 +126,66 @@
 
 - Appuyez sur ADD
 
-![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/812ccc1e-bd4b-4772-9c11-2ebf473b9976)
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/407717bf-ecf3-4942-a334-200870170dd7)
 
 - Maintenant on va ajouter un autre process PutFile
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/5a05b89a-251e-4da0-bc83-39c7aadbb624)
+
+- Cliquer sur ADD
+- Double cliquer sur PutFile :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/b1232506-ccb1-48f7-a4e5-a20b95b698ec)
+
+- Aller sur Properties > Directory et ajouter ````data/input``` :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/bb3c7728-7411-437d-896f-a7de4827be8c)
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/7e230790-c214-4bd9-96f8-66013f954553)
+
+- Aller sur Relationships et cocher la case terminate de success : 
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/6c5dccd6-5005-4bfe-944b-74e9d079c678)
+
+- Cliquer sur Apply 
+- Ajouter une connection entre UpdateAttribute et PutFile :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/0c982b90-b86f-471f-9b22-040221542b09)
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/7705664d-ccad-41ec-ab28-bcdbd25f7346)
+
+- Ajouter un autre process : LogMessage :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/287bd25a-612d-406d-83f4-9ab2ef454900)
+
+- Cliquer sur ADD :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/9eeceb81-0275-4d24-923d-f3f2303c3d91)
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/a0224c78-7d33-494f-95bb-f74f76601f07)
+
+- Double cliquer sur le process LogMessage :
+
+- Aller sur Relationships , et cocher terminate :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/57740e39-bf69-4af9-acdd-ae0504ade5f8)
+
+- Cliquer sur Apply 
+
+- Ajouter une connection entre PutFile et LogMessage ; cocher failure :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/afc23769-b4d4-45e9-8a42-27967784bc10)
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/123695e8-60a6-4591-820c-6d70e75fac12)
+
+
+
+
+
+
+
+
+
+
+
+
