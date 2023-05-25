@@ -101,15 +101,55 @@
 
 - Aller sur Database Deployment , et cliquer sur connect :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/fca6b837-2b53-4613-b533-13bdbecd66bd)
 
+- Cliquer sur Divers :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/e45c1073-7cd7-4adc-a13b-90af0364904c)
 
+- Choisir la version 4.3 or later de java et copier votre connection String :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f56e3663-b410-4e2c-9f0a-001bcc5fe039)
 
+- Créer une nouvelle Database et Collection :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f0090e41-146a-42ff-a133-af268b3d5015)
 
+- Ajoutez un autre process PutMongo
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/883d24f0-19dc-490b-9978-b4195ad8c802)
 
+- Double cliquez sur PutMongo
+- Aller sur Scheduling ; ajouter 5 sec au Run Scheduler :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/59d8ee46-3d23-434b-ae4e-b7f84cd098b7)
 
+- Aller sur Properties / Copier et coller votre Mongo URI en modifiant <password> par votre mot de passe d'utilisateur Mongo
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/366b18ec-c54c-4606-a8d9-2c3be6238e5c)
+
+- Ajoutez le nom ainsi que la collection de votre MongoDB :
+  
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/2ca86218-1d01-4830-ac38-bbfaf18ed6ee)
+
+- Cliquer sur Apply :
+  
+- Ajouter une connection entre ReplaceText et PutMongo :
+  
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/4b1e9fb6-bf7e-4177-b316-e2f908d0075f)
+
+- Copier et coller le process Log Message et ajouter une output SUCCESS_MONGO :
+ 
+ ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/13e5dccf-20b1-4d16-b170-e1b550a3ca30)
+
+- Exécutez votre Workflow
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/bef83b7e-7760-4b85-9fe9-ea396c5c3f74)
+
+  
+- Allez à votre MongoDB et rafraîchissez
+
+- Vous devez visualiser vos données sur MongoDB 
+
+ ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/3b396c03-55ff-4c35-9985-7a7f82aa9488)
 
