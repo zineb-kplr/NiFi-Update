@@ -203,7 +203,14 @@ Ajoutez schema text :
 
 - Executer ensuite les 3 process :
 
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/4724ecec-dd76-49f3-87cc-467736c9aa85)
 
+- Vous pouvez visualiser les données transmises en revenant au terminal et taper cette commande
 
+```
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic IBM --from-beginning
+```
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/4ff10f0d-8c21-4a08-8000-78b28cbb9c9f)
 
 
