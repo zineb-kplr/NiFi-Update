@@ -13,6 +13,7 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/e3859632-e8c9-4fec-85ed-c2242d6a312f)
 
 - Insérez l'icône du Process Group et faites-la glisser pour créer un nouveau Process Group:
+
 - Insérez l'icône du Process Group et faites-la glisser pour créer un nouveau Process Group:
 
 ![process_group](https://user-images.githubusercontent.com/78825764/193155523-9dc14871-1799-4aaf-8bef-cc0463eaefb7.PNG)
@@ -22,6 +23,7 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/7df288df-d4e2-4ab5-91fe-39fd49e91b5a)
 
 - Dans cette première partie on va créer notre premier Workflow au niveau du premier process group 1-AlphaVantage Download
+
 - Double Cliquer sur Le Process Group 1-AlphaVantage Download 
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/36bb7ebe-724f-4fc2-b36a-ac2d419d2277)
@@ -33,6 +35,7 @@
 ![b](https://user-images.githubusercontent.com/78825764/193159262-452364ad-5ba5-4667-a881-cf14bee04724.png)
 
 - et on va créer le premier prossecor nommé GetHTTP :
+
 - Cliquer sur ADD :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/af973344-d4f3-42fc-be16-7ebf74f382e5)
@@ -67,29 +70,37 @@
 
 - Ensuite appuyez sur SSL Context Service > Create new service > Compatible Controller Services >StandardSSLContextService 1.21.0 > create
   
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/089303ca-4256-4dcd-9b90-c3afb5ca35c1)
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/089303ca-4256-4dcd-9b90-c3afb5ca35c1)
    
- - Cliquer sur la flèche :
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/8cff6d1d-d3ac-429f-9344-a131cb1ac279)
+- Cliquer sur la flèche :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/8cff6d1d-d3ac-429f-9344-a131cb1ac279)
    
- - Cliquez sur l'icone de paramètre :
+- Cliquez sur l'icone de paramètre :
    
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f93f7054-e4a7-48a8-8110-f68591364198)
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f93f7054-e4a7-48a8-8110-f68591364198)
     
- - Aller sur Properties :
+- Aller sur Properties :
     
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/27f2ff4c-4d17-4793-a77b-005f71a09199)
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/27f2ff4c-4d17-4793-a77b-005f71a09199)
     
- - Modifiez le paramètre Truststore type no value > JKS
- - Modifier le paramètre Truststore Filename : ```/opt/nifi/nifi-current/conf/cacerts.jks```
- - Modifier le paramètre Truststore Password : ```changeit```
- - Cliquer sur Apply : 
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/87ceea1e-2631-4b33-beec-7f542449ccd8)
- - Cliquer sur Enable :
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f4322168-5645-4337-8d53-4101784d0891)
- - De la meme facon on va créer un autre process GetHTTP : Apple Stock On va juste changer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=YOURAPIKEY&datatype=csv et  le Truststore Filename intraday_5min_AAPL.csv(Vous pouvez faire un copier coller)
+- Modifiez le paramètre Truststore type no value > JKS
+
+- Modifier le paramètre Truststore Filename : ```/opt/nifi/nifi-current/conf/cacerts.jks```
+
+- Modifier le paramètre Truststore Password : ```changeit```
+
+- Cliquer sur Apply : 
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/87ceea1e-2631-4b33-beec-7f542449ccd8)
+
+- Cliquer sur Enable :
+
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/f4322168-5645-4337-8d53-4101784d0891)
+
+- De la meme facon on va créer un autre process GetHTTP : Apple Stock On va juste changer l'URL https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=1min&apikey=YOURAPIKEY&datatype=csv et  le Truststore Filename intraday_5min_AAPL.csv(Vous pouvez faire un copier coller)
   
- ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/df682200-02c6-4fdd-976c-4390be95b36c)
+![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/df682200-02c6-4fdd-976c-4390be95b36c)
    
 - Ensuite on va créer un autre process UpdateAttribute :
    
@@ -102,10 +113,15 @@
 - Ajouter filename > OK :
  
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/5a7be08a-f165-47a0-916d-4027fd577fc6)
+
 - Ajouter la valeur ```${filename:substringBeforeLast('.csv')}_${now():toNumber()}${literal('.csv')}``` au filename 
+
 - Cliquer sur OK  > Apply :
+
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/d7535bb6-a4cf-4c29-8b87-40965c6a213f)
+
 - Maintenant on va ajouter des relations entre GetHTTP :IBM Stock et UpdateAttributs et aussi entre GetHTTP : Apple Stock et UpdateAttributs
+
 ![F](https://user-images.githubusercontent.com/78825764/193239963-202238ce-dfbb-4cd1-a998-a87ee118251c.png)
 
 - Appuyez sur ADD
