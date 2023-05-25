@@ -94,3 +94,22 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/24607e7f-a3ee-4e83-b960-e219b39ba91b)
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/478f7e3d-80ec-4b29-a9a7-545b2459f0ac)
+
+# Se connecter à MongoDB :
+
+- Se connecter sur votre compte (Mongo DB)[https://account.mongodb.com/account/login?_ga=2.84207577.1748310431.1685041583-955503991.1678959535]
+
+- Aller sur Database Deployment , et cliquer sur connect :
+
+
+
+
+
+
+
+
+
+
+
+
+
