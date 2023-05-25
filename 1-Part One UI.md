@@ -137,7 +137,7 @@
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/b1232506-ccb1-48f7-a4e5-a20b95b698ec)
 
-- Aller sur Properties > Directory et ajouter ````data/input``` :
+- Aller sur Properties > Directory et ajouter ```data/input``` :
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/bb3c7728-7411-437d-896f-a7de4827be8c)
 
@@ -159,8 +159,6 @@
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/287bd25a-612d-406d-83f4-9ab2ef454900)
 
 - Cliquer sur ADD :
-
-![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/9eeceb81-0275-4d24-923d-f3f2303c3d91)
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/a0224c78-7d33-494f-95bb-f74f76601f07)
 
