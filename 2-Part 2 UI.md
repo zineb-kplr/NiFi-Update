@@ -187,7 +187,7 @@ Ajoutez schema text :
  - Accéder au container de Kafka depuis Docker :
 
  ```
- docker exec -it empty-template-kafka-1 bin/bash
+ docker exec -it nifi-template-kafka-1 bin/bash
  ```
  ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/989c39d2-7f7a-42ef-9c14-d225b7125bf8)
 
