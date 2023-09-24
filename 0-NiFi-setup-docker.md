@@ -1,5 +1,6 @@
 # Setup NiFi - Docker - Gitpod :
 
+- Cloner ce [Repo](https://github.com/zineb-kplr/NiFi-template) 
 - Se connecter sur Gitpod : https://gitpod.io/workspaces/
 - Cliquer sur New Workspace :
 
