@@ -52,7 +52,7 @@
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/cbee1c6d-93a9-49c1-8601-f5522e19efc7)
 
-- Ajoutez ```{filename:substringBeforeLast("_"):substringAfterLast("_")}``` au topic`:
+- Ajoutez ```${filename:substringBeforeLast("_"):substringAfterLast("_")}``` au topic`:
 
 ![image](https://github.com/zineb-kplr/NiFi-Update/assets/123749462/e53c2a60-9379-4788-b768-5bf242762f7f)
 
